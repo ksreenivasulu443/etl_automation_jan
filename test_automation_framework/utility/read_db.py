@@ -30,12 +30,12 @@ def read_db(db_creds_file, query=None,env='qa'):
     return df
 
 
-df = read_db(db_creds_file='/Users/admin/PycharmProjects/etl_automation_jan/test_automation_framework/configs/creds_file.xlsx',
-        env='snowflake_uat',
-             query='Select * from CONTACT.PUBLIC.CONTACT_INFO' )
-
-
-print(df)
+# df = read_db(db_creds_file='/Users/admin/PycharmProjects/etl_automation_jan/test_automation_framework/configs/creds_file.xlsx',
+#         env='snowflake_uat',
+#              query='Select * from CONTACT.PUBLIC.CONTACT_INFO' )
+#
+#
+# print(df)
 
 
 

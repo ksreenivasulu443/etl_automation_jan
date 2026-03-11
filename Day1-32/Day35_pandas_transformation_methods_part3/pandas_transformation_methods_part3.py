@@ -50,7 +50,7 @@ sales = pd.DataFrame({
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 1000)
 
-df = pd.read_csv("/Users/admin/PycharmProjects/etl_automation_jan/Day1-32/day30_python_pandas/input_files/Contact_info_7.csv")
+df = pd.read_csv("/Day1-32/day30_python_pandas/input_files/Contact_info_7.csv")
 
 print(df)
 

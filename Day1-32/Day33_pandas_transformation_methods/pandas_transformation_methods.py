@@ -36,7 +36,7 @@ pd.set_option('display.width', 1000)
 
 #Select sample rows from dataframe
 
-df = pd.read_csv(r"/Users/admin/PycharmProjects/etl_automation_jan/Day1-32/day31_python_pandas_part2/input_files/IPL Matches 2008-2020.csv")
+df = pd.read_csv(r"/Day1-32/day31_python_pandas_part2/input_files/IPL Matches 2008-2020.csv")
 
 
 # print(df)

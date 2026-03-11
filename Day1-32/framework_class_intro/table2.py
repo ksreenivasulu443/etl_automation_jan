@@ -8,7 +8,7 @@ from pandasql import sqldf
 pd.set_option('display.max_columns',None)
 pd.set_option('display.width',2000)
 
-source = pd.read_csv('/Users/admin/PycharmProjects/etl_automation_jan/Day1-32/day31_python_pandas_part2/input_files/Contact_info.csv')
+source = pd.read_csv('/Day1-32/day31_python_pandas_part2/input_files/Contact_info.csv')
 # source_v2 = pd.read_csv("/Users/admin/PycharmProjects/etl_automation_jan/Day1-32/day31_python_pandas_part2/input_files/Contact_info_7.csv")
 #
 # source = pd.concat([source_v1,source_v2])
