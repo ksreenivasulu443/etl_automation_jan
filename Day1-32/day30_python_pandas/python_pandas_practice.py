@@ -74,7 +74,7 @@ print("df_using_arr_random.columns", df_using_arr_random.columns)
 
 ###########################################################################
 
-df_using_csv = pd.read_csv(r"/Day1-32/day30_python_pandas/input_files/sample_csv.csv")
+df_using_csv = pd.read_csv(r"/Day1-32/day30_python_pandas/input_files/sample_csv_source.csv")
 
 print(df_using_csv)
 print(df_using_csv.columns)

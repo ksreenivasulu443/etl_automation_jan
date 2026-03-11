@@ -3,7 +3,7 @@ import numpy as np
 from pandasql import sqldf
 
 
-# df_using_csv = pd.read_csv(r"/Users/admin/PycharmProjects/etl_automation_jan/day30_python_pandas/input_files/sample_csv.csv",
+# df_using_csv = pd.read_csv(r"/Users/admin/PycharmProjects/etl_automation_jan/day30_python_pandas/input_files/sample_csv_source.csv",
 #                            names = ['sno','name','loc'],
 #                            nrows= 2)
 #
