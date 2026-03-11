@@ -69,9 +69,9 @@ def null_check(df,not_null_columns):
 def data_compare(source,target):
     print("="*100)
     print("Data compare validation has started")
-    query = """select * from source except select * from target
+    query = """select a.*,'source' from (select * from source except select * from target) a 
                 union all
-                select * from target except select * from source"""
+                select b.*,'target' from (select * from target except select * from source) b"""
     failed = sqldf(query)
     if len(failed)>0:
         print("data is not matching")
@@ -82,4 +82,16 @@ def data_compare(source,target):
     print("="*100)
     print("Data compare validation has completed")
     print("="*100)
+
+def schema_check(source, target):
+    source_columns = set(source.columns)
+    target_columns = set(target.columns)
+    diff = source_columns.difference(target_columns)
+    if len(diff)>0:
+        print("schema is not matching")
+        print(diff)
+    else:
+        print("schema is matching")
+
+
 
