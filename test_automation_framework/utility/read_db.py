@@ -4,9 +4,9 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 1000)
 
 
-def read_db(db_creds_file, query=None,env='qa'):
+def read_db(db_creds_file, query=None,datata_type='snowflake_qa'):
     creds = pd.read_excel(db_creds_file)
-    credentials = creds.query(f"env == '{env}' ")
+    credentials = creds.query(f"database_type == '{datata_type}' ")
 
     print(credentials)
     print(credentials.iloc[0,1])
